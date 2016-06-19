@@ -1,0 +1,82 @@
+html, body {
+    /*clear browser defaults*/
+    margin: 0;
+    padding: 0;
+
+    background-color: rgb(40, 40, 40);
+    color: rgb(200, 200, 200);
+}
+
+.banner {
+    background-color: black;
+    background-image: url("../images/backgrounds/main.png");
+
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.banner .logo {
+    transition: max-height .5s linear;
+    max-height: 10em;
+}
+
+.banner .background-sizer {
+    min-width: 100%;
+    max-width: 100%;
+    visibility: hidden;
+}
+
+.banner .navigation-top {
+    position: fixed;
+    width: 100%;
+    /*background-color:rgba(0, 0, 0, 0.4);*/
+    background-image: linear-gradient(
+                              black,
+                              rgba(0,0,0,0)
+                          );
+}
+
+.banner-minimized .logo{
+    max-height: 7em;
+}
+
+.banner .navigation-top ul {
+    float: right;
+    padding: 1em;
+    padding-top: 3em;
+    list-style-type: none;
+    transition: padding-top .5s linear;
+}
+
+.banner-minimized .navigation-top ul {
+    padding-top: 1em;
+}
+
+.banner .navigation-top ul li {
+    font-size: 1.5em;
+
+    padding-left: 2em;
+    float: left;
+}
+
+.main-content {
+    padding-top: 3em;
+}
+
+.main-content .section {
+    margin-right: auto;
+    margin-left: auto;
+
+    width: 44em;
+    max-width: 90%;
+
+
+    /*separating out text a bit*/
+    margin-bottom: 3em;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-content .section h1 {
+    font-size: 1.5em;
+}
